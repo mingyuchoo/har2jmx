@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Index</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/main.css">
+​
+</head>
+<body>
+    <div class="upload-container">
+        <div class="upload-header">
+            <h2>HAR 2 JMX Converter</h2>
+        </div>
+        <div class="upload-content">
+            <div class="single-upload">
+                <h3>Upload Single HAR File</h3>
+                <form id="singleUploadForm" name="singleUploadForm">
+                    <input id="singleFileUploadInput" type="file" name="file" class="file-input" required />
+                    <button type="submit" class="primary submit-btn">Submit</button>
+                </form>
+                <div class="upload-response">
+                    <div id="singleFileUploadError"></div>
+                    <div id="singleFileUploadSuccess"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/js/jquery-3.4.1.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+</html>
