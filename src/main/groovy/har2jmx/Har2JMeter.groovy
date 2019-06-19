@@ -1,4 +1,4 @@
-package har2jmeter
+package har2jmx
 
 import groovy.json.JsonSlurper
 import groovy.xml.MarkupBuilder

@@ -1,4 +1,4 @@
-package har2jmeter
+package har2jmx
 
 import org.junit.Rule
 import org.junit.rules.TemporaryFolder
@@ -18,7 +18,7 @@ class Har2jmxSpec extends Specification {
     def outputFile
 
     def setupSpec() {
-        def resourceFolder = "src/test/resources/har2jmeter"
+        def resourceFolder = "src/test/resources/har2jmx"
         googleHarFile = new File(resourceFolder, "www.google.de.har")
         groovyConsoleHarFile = new File(resourceFolder, "groovyconsole.appspot.com.har")
         googleQueryHarFile = new File(resourceFolder, "query.google.de.har")
