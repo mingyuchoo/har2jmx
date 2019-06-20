@@ -1,7 +1,8 @@
-package har2jmx
+package har2jmx.service
 
 import groovy.json.JsonSlurper
 import groovy.xml.MarkupBuilder
+import har2jmx.payload.JMeterHttpSampler
 
 class Har2jmx {
 

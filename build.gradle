@@ -1,6 +1,7 @@
 plugins {
     id 'java'
     id 'groovy'
+    id 'idea'
     id 'org.springframework.boot' version '2.1.4.RELEASE'
     id 'io.spring.dependency-management' version '1.0.7.RELEASE'
 }
@@ -35,10 +36,4 @@ dependencies {
 
 wrapper {
     gradleVersion = '5.4.1'
-}
-
-
-bootRun {
-    // Use Spring Boot DevTool only when we run Gradle bootRun task
-    classpath = sourceSets.main.runtimeClasspath + configurations.developmentOnly
 }

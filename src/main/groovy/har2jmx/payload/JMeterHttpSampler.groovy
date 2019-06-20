@@ -1,4 +1,4 @@
-package har2jmx
+package har2jmx.payload
 
 class JMeterHttpSampler {
 

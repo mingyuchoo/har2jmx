@@ -1,5 +1,7 @@
 package har2jmx
 
+import har2jmx.payload.JMeterHttpSampler
+import har2jmx.service.Har2jmx
 import org.junit.Rule
 import org.junit.rules.TemporaryFolder
 import spock.lang.Specification
@@ -34,7 +36,7 @@ class Har2jmxSpec extends Specification {
 
     def createGoogleJmx() {
         given:
-            Har2jmx har2jMeter = new Har2jmx()
+        Har2jmx har2jMeter = new Har2jmx()
         when:
             har2jMeter.convert(googleHarFile, outputFile)
         then:

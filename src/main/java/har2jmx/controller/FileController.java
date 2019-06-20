@@ -1,7 +1,5 @@
 package har2jmx.controller;
 
-//import com.example.filedemo.payload.UploadFileResponse;
-//import com.example.filedemo.service.FileStorageService;
 import har2jmx.service.FileStorageService;
 import har2jmx.payload.UploadFileResponse;
 import org.slf4j.Logger;
@@ -31,6 +29,8 @@ public class FileController {
     @PostMapping("/uploadFile")
     public UploadFileResponse uploadFile(@RequestParam("file") MultipartFile file) {
         String fileName = fileStorageService.storeFile(file);
+
+        System.out.println(">>> " + fileName);
 
         String fileDownloadUri = ServletUriComponentsBuilder.fromCurrentContextPath()
                 .path("/downloadFile/")

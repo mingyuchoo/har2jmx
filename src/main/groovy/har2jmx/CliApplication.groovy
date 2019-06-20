@@ -1,6 +1,7 @@
 package har2jmx
 
 import groovy.cli.picocli.CliBuilder
+import har2jmx.service.Har2jmx
 
 def cli = new CliBuilder(usage: 'har2jmx -har [*.har] -jmx [*.jmx]', header: 'Options:')
 cli.help('print this message.')
