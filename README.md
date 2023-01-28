@@ -1,8 +1,13 @@
-# HAR to Apache JMeter Convertor
+<p align="center">
+  <a href="https://github.com/mingyuchoo/har2jmx/issues"><img alt="Issues" src="https://img.shields.io/github/issues/mingyuchoo/har2jmx?color=appveyor" /></a>
+  <a href="https://github.com/mingyuchoo/har2jmx/pulls"><img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/mingyuchoo/har2jmx?color=appveyor" /></a>
+</p>
+
+# har2jmx
 
 [![Build Status](https://buildhive.cloudbees.com/job/Seitenbau/job/har2jmx/badge/icon)](https://buildhive.cloudbees.com/job/Seitenbau/job/har2jmx/)
 
-The project contains a simple Java/Groovy based command line tool 
+The project contains a simple Java/Groovy based command line tool
 to convert a HAR file into a JMeter test scripts.
 
 	usage: har2jmx -har [*.har] -jmx [*.jmx]
@@ -18,19 +23,19 @@ to convert a HAR file into a JMeter test scripts.
 ## Build
 
 	./gradlew distZip
-	
+
 or
-	
+
 	./gradlew distTar
 
 The packages can be found in the directory:
 
- - build/distributions/har2jmx-*.zip 
+ - build/distributions/har2jmx-*.zip
  - build/distributions/har2jmx-*.tar
- 
+
 ## Download
 
-Download the har2jmx from the project web site: 
+Download the har2jmx from the project web site:
 http://seitenbau.github.com/har2jmx/
 
 ## License
